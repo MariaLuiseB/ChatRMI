@@ -8,7 +8,7 @@ import java.util.Map; // Para manipulação de pares chave-valor
 public class Servidor extends UnicastRemoteObject implements InterfaceServidor { // Implementa a interface do servidor
 
     private final ArrayList<InterfaceProc> clientesConectados = new ArrayList<>(); // Lista de clientes conectados
-    private Map<InterfaceProc, String> clienteNomes = new HashMap<>(); // Mapa cliente-nome
+    private final Map<InterfaceProc, String> clienteNomes = new HashMap<>(); // Mapa cliente-nome
 
     public Servidor() throws RemoteException { // Construtor do servidor
         super();
