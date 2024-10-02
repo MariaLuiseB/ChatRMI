@@ -23,7 +23,7 @@ public class Proc extends UnicastRemoteObject implements InterfaceProc { // Impl
 
     public static void main(String[] args) {
         try {
-            String ipServidor = "192.168.1.19"; // IP do servidor
+            String ipServidor = "10.1.45.167"; // IP do servidor
             InterfaceServidor servidor = (InterfaceServidor) java.rmi.Naming.lookup("rmi://" + ipServidor + "/ChatServidor"); // Conecta ao servidor
 
             Proc cliente = new Proc(); // Instancia o cliente

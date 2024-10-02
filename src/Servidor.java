@@ -59,7 +59,7 @@ public class Servidor extends UnicastRemoteObject implements InterfaceServidor {
         try {
             java.rmi.registry.LocateRegistry.createRegistry(1099); // Cria o registro RMI
 
-            String ipServidor = "192.168.1.19"; // IP do servidor
+            String ipServidor = "10.1.45.167"; // IP do servidor
 
             Servidor servidor = new Servidor(); // Instancia o servidor
 
